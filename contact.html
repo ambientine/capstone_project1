@@ -26,17 +26,159 @@
 		    </div> <!-- .navbar-header -->
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      	<ul class="nav navbar-nav">
-		        	<li><a href="home.html">Home</a></li>
+		        	<li><a href="home.html" class="glyphicon glyphicon-home"></a></li>
 		        	<li><a href="about.html">About</a></li>
 		        	<li><a href="services.html">Services</a></li> 
-		       	 	<li><a href="products.html">Products</a></li> 
-		       	 	<li class="active"><a href="contact.html">Contact Us</a></li> 
+		       	 	<!-- products dropdown -->
+		        	<li class="dropdown">
+		       	 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
+		       	 			<span class="caret"></span>
+		       	 		</a>
+		       	 		<ul class="dropdown-menu">
+				        	<li><a href="#">Bag tags</a></li>
+				        	<li><a href="#">Calling cards</a></li>
+				        	<li><a href="#">Canvas bags</a></li>
+				        	<li><a href="#">ID lace</a></li>
+				        	<li><a href="#">Jigsaw puzzle</a></li>
+				        	<li><a href="#">Key chain</a></li>
+				        	<li><a href="#">Ref magnets</a></li>
+				        	<li><a href="#">Button pins</a></li>
+				        	<li><a href="#">Mouse pads</a></li>
+				        	<li><a href="#">Mugs</a></li>
+				        	<li><a href="#">Personalized shirts</a></li>
+				        	<li><a href="#">Photo slate</a></li>
+				        	<li><a href="#">PVC ID</a></li>
+				        	<li><a href="#">Sports jug</a></li>
+				        	<li><a href="#">Tarpaulin</a></li>
+				        	<li><a href="#">Tumbler</a></li>
+				        </ul>
+				    </li><!-- products dropdown --> 
+		       	 	<li><a href="contact.html">Contact Us</a></li> 
 		      	</ul>
 		    </div> <!-- .collapse .navbar-collapse #myNavbar-->
 		</div> <!-- .container-fluid -->
 	</nav>
 
+	<main id="mainContact" class="container-fluid">
+		<div class="row trans-bg">
+			<div class="col-xs-12 col-md-12">
+				<div class="page-header text-center">
+					<h1>Branches</h1>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div id="mapfirst"></div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 text-left">
+						<h3>Main Branch</h3>
+						<p>Address: Ourtees Printed Designs, 3F, T56 Novaliches Plaza Mall, Novaliches Quezon City, Philippines</p>
+						<p>
+							<span class="glyphicon glyphicon-earphone">&nbsp;</span>
+							<a href="#">(632)373-0616</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)923111-6480</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)932671-3300</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)905528-6319</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+							<a href="#">ourteesprinteddesigns@yahoo.com</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+							<a href="#">ourteesdesigns@gmail.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div id="mapsecond"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 text-left">
+						<h3>Sta Monica Branch</h3>
+						<p>Address: 1004 Brangay. Sta. Monica, Cor Jordan Plains Subd. Nova., Quezon City Philippines</p>
+						<p>
+							<span class="glyphicon glyphicon-earphone">&nbsp;</span>
+							<a href="#">(632)461-1797</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)923111-6480</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)932671-3300</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)905528-6319</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+							<a href="#">ourteesprinteddesigns@yahoo.com</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+							<a href="#">ourteesdesigns@gmail.com</a>
+						</p>
+					</div>
+			</div>	
+		</div>
+	</main>
+
+	<script>
+		function myMap() {
+
+			var mapOptions = {
+			    center: new google.maps.LatLng(14.721708, 121.040361),
+			    zoom: 16,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map(document.getElementById("mapfirst"), mapOptions);
+
+			/* Marker and positioning on the map */
+			var marker = new google.maps.Marker({  
+      			position: new google.maps.LatLng(14.721708, 121.040361), map: map
+      		});
+
+		}
+
+		function myMap1() {
+			
+			var mapOptions = {
+			    center: new google.maps.LatLng(14.723047, 121.041617),
+			    zoom: 16,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map(document.getElementById("mapsecond"), mapOptions);
+
+      		var marker = new google.maps.Marker({  
+      			position: new google.maps.LatLng(14.723047, 121.041617), map: map
+      		});
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5jezcgKGA1fgG7uMwzOAQKe-tQnrtfi8&callback=myMap"></script>
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6xH5CR7e0bt-dHm1cKjaP_yu2uKNvjqk&callback=myMap1"></script> -->
+
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 	<script src="./js/bootstrap.js"></script>
     
 </body>

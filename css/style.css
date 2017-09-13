@@ -1,32 +1,36 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: skyblue;
-}
-
-nav {
-	/*background-image: none;*/
-	/*background-color: lightblue;*/
 }
 
 .navbar-default {
     background-image: none;
     background-color: transparent;
-    border: 0;
+    border: none;
     box-shadow: none;
 }
 
 .navbar {
 	border-radius: 0;
 	margin-bottom: 0;
-}
-
-main {
-	width: 60%;
+	min-height:100px !important;
 }
 
 .navbar,
 h1, 
 p {
 	font-family: 'Montserrat', sans-serif;
+}
+
+.page-header {
+	margin-top: 0;
+}
+
+h3 {
+	margin-top: 10px;
+	font-family: 'Oswald';
 }
 
 #myNavbar {
@@ -44,29 +48,90 @@ a.navbar-brand > img[alt="tagline"] {
 }
 
 /* customized height of navbar */
-.navbar-nav > li > a {padding-top:40px !important; padding-bottom:40px !important;}
-.navbar {min-height:100px !important}
-
-.container {
-	padding: 0;
-	margin: 40px auto;
+.navbar-nav > li > a,
+.navbar-form {
+	padding-top:40px !important; padding-bottom:40px !important;
 }
 
-select {
-    border: 1px solid #fff;
-    background-color: transparent;
+.dropdown-menu {
+	min-width: 200px;
+  	background-color: rgba(0,115,115,0.9);
 }
 
-.navbar-default .navbar-nav > .active > a{
+.dropdown-menu > li > a {
+  	color: #eef9fa;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu>li>a:focus {
 	background-image: none;
-	background-color: lightblue;
+  	background-color: rgba(0,109,100,0.3);
+  	color: lightgray;
+ }
+
+.navbar-nav li.dropdown.open > .dropdown-toggle,
+.navbar-nav li.dropdown.active > .dropdown-toggle,
+.navbar-nav li.dropdown.open.active > .dropdown-toggle {
+  	background: transparent;
+  	box-shadow: none;
+  	color: #eef9fa;
+}
+
+main {
+	width: 70%;
+}
+
+.carousel {
+	width: 100%;
+}
+
+.trans-bg {
+	margin: 20px 0;
+	padding: 10px 10px;
+	border-radius: 1%;
+	background-color: rgba(14,0,102,0.1);
+	min-height: 200px;
+}
+
+.trans-bg li a {
+	text-decoration: none;
+	color: #223b3b;
+	font-family: 'Oswald';
+}
+
+.trans-bg li a:hover {
+	text-decoration: none;
+	color: #edf6f6;
 }
 
 figure {
-	margin-top: 80px;
+	margin-top: 15px;
 }
 
 figure > p {
 	margin-top: 10px;
 	text-align: center; 
+}
+
+video {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#mapfirst,
+#mapsecond {
+	min-width: auto;
+	height: 300px;
+	background-color: gray;
+	border: 1px solid white;
+}
+
+footer {
+	color: gray;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+#mainContact {
+	width: 80%;
 }
