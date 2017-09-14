@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>	
 	<nav class="navbar navbar-default">
@@ -27,16 +29,16 @@
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      	<ul class="nav navbar-nav">
 		        	<li><a href="home.html" class="glyphicon glyphicon-home"></a></li>
-		        	<li><a href="about.html">About</a></li>
+		        	<li><a href="about.html">About Us</a></li>
 		        	<li><a href="services.html">Services</a></li> 
 		       	 	<!-- products dropdown -->
 		        	<li class="dropdown">
-		       	 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
+		       	 		<a class="dropdown-toggle" data-toggle="dropdown" href="products.html">Products
 		       	 			<span class="caret"></span>
 		       	 		</a>
 		       	 		<ul class="dropdown-menu">
-				        	<li><a href="#">Bag tags</a></li>
-				        	<li><a href="#">Calling cards</a></li>
+				        	<li><a href="products.html #bagtags">Bag tags</a></li>
+				        	<li><a href="products.html #calling_cards">Calling cards</a></li>
 				        	<li><a href="#">Canvas bags</a></li>
 				        	<li><a href="#">ID lace</a></li>
 				        	<li><a href="#">Jigsaw puzzle</a></li>
@@ -59,15 +61,124 @@
 		</div> <!-- .container-fluid -->
 	</nav>
 
-	<main class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-md-12">
-				<figure class="margin-b-2">
-					<img class="img-responsive" src="./images/" alt="products list">
-				</figure>
+	<main id="mainProducts" class="container-fluid ">
+		<div class="row trans-bg">
+			<div id="bag_tags" class="col-xs-12 col-md-12 text-center">
+				<div class="row">
+					<h2>Bag Tags</h2>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/bag_tag1.jpg" alt="bag tag 1">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/bag_tag2.jpg" alt="bag tag 2">
+					</div>
+				</div>
+				<div class="row specs">
+					<p>Specification:</p>
+					<p>Size: 2.5 x2.5 inches</p> 				
+		 			<p>Waterproof personalizedprints</p>				
+		 			<p>Glossy with vivid colored print-out</p>
+				</div>
+			</div>	
+		</div>
+		<div class="row trans-bg">
+			<div id="calling_cards" class="col-xs-12 col-md-12 text-center">
+				<div class="row">
+					<h2>Calling cards</h2>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/button_pin1.jpg" alt="calling cards 1">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/button_pin2.jpg" alt="calling cards 2">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/button_pin3.jpg" alt="calling cards 3">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<img class="img-responsive" src="./images/button_pin4.jpg" alt="calling cards 4">
+					</div>
+				</div>
+				<div class="row specs">
+					<p>Specification:</p>
+		 			<p>Personalizedprints</p>				
+		 			<p>Glossy with vivid colored print-out</p>
+				</div>
 			</div>	
 		</div>
 	</main>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="trans-bg">
+					<h3>PRODUCTS &#38; SERVICES</h3>
+					<ul class="list-unstyled">
+						<li><a href="#">Personalized Designs</a></li>
+						<li><a href="#">Tarpaulin</a></li>
+						<li><a href="#">Shirt printing</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="trans-bg">
+					<h3>COMPANY INFO</h3>
+					<ul class="list-unstyled">
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="contact.html">BRANCHES</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="trans-bg">
+					<h3>ASSISTANCE?</h3>
+					<ul class="list-unstyled">
+						<li>
+							<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+							<a href="#">ourteesprinteddesigns@yahoo.com</a>
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-earphone">&nbsp;</span>
+							<a href="#">(632)373-0616</a>
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)923111-6480</a>
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)932671-3300</a>
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-phone">&nbsp;</span>
+							<a href="#">(63)905528-6319</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- social media -->
+		<div class="row text-center">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div>
+					<a href="https://www.facebook.com/OurteesPrintedDesigns/" class="fa fa-facebook" target="_blank"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 text-center">
+				<p>Copyright &copy; 2017 Ourtees Printed Designs</p>
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
