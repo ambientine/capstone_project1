@@ -151,10 +151,16 @@ footer {
 	height: 100%;
 }
 
-img[alt*="bag tag"],
-img[alt*="calling cards"] {
+.imgprod {
 	border: 1px solid skyblue;
-	width: 100%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.imgprodver {
+	border: 1px solid skyblue;
+	width: 45%;
+	margin: 0 auto;
 }
 
 .specs {
